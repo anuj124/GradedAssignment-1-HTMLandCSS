@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Century Gothic;
+}
+body{
+    height: auto;
+    margin: 0%;
+}
+header{
+    background-color: aqua;
+    text-align: center;
+    background-size: cover;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+#navigate{
+    top: 0%;
+    position: sticky;
+}
+.menu{
+    list-style-type: none;
+    float: right;
+    position: sticky;  
+    width: 100%;
+    padding: 10px 0px;  
+    background-color: black;
+}
+
+.menu li{
+    display: inline-block;
+    
+}
+.menu li a{
+    text-decoration: none;
+    color: whitesmoke;
+    background-color: black;
+    padding: 7px 20px;
+}
+.menu li a:hover{
+    color: black;
+    background-color: white;
+}
+
+.menu li:nth-child(2):hover #Dropdown_1, 
+.menu li:nth-child(3):hover #Dropdown_2
+{
+    display: block;
+
+}
+#Dropdown_1, #Dropdown_2 {
+    position: absolute;
+    width: auto;
+    display: none;
+    padding: 0%;
+    background-color: lightcyan;
+}
+#Dropdown_1 li, #Dropdown_2 li {
+    display: block;
+    margin-top: 20px;
+}
+
+#Dropdown_1 li a:hover, #Dropdown_2 li a:hover {
+    text-decoration: none;
+    color: black;
+    background-color: gainsboro;
+    padding: 7px 20px;
+    float: left;
+}
+
+#Dropdown_1 li a, #Dropdown_2 li a {
+    text-decoration: none;
+    color: black;
+    padding: 7px 20px;
+    float: left;
+    background-color: lightcyan;
+}
+
+.slide{
+    width: auto;
+    height: 550px;
+    border: solid steelblue 2px;
+    background-size: cover;
+    animation: slide 10s infinite;
+    overflow: hidden;
+}
+@keyframes slide {
+    0%{
+        background-image: url("../images/Animation/ani1.jpg");
+    }
+    20%{
+        background-image: url("../images/Animation/ani2.png");
+    }
+    40%{
+        background-image: url("../images/Animation/ani2.png");
+    }
+    60%{
+        background-image: url("../images/Animation/ani3.jpg");
+    }
+    80%{
+        background-image: url("../images/Animation/ani4.jpg");
+    }
+    100%{
+        background-image: url("../images/Animation/ani5.jpg");
+    }
+    
+}
+
+#covidCare{
+    margin: 25px;
+}
+#diabetesCare{
+    margin: 25px;
+}
+.productBox{
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.product{
+    background-color: lightgrey;
+    width: 24%;
+    height: 250px;
+    display: inline-block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.product img{
+    height: 100px;
+    width: 200px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.product p{
+    color: blue;
+    text-align: left;
+    margin-left: 25px;
+}
+.product button{
+    padding: 10px;
+    width: 90%;
+    border: blue solid 1px;
+    border-radius: 10px;
+}
+.product button:hover{
+    padding: 15px;
+    width: 90%;
+    background-color: rgb(250, 234, 230);
+    border: rgb(0, 255, 76) solid;
+    border-radius: 10px;
+}
+.product button h3{
+    color: orangered;
+}
+
+footer{
+    background-color: black;
+    text-align: center;
+    width: 100%;
+}
+footer h5{
+    padding: 20px;
+    color: white;
+}

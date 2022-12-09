@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Lab Test Form</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <link rel="stylesheet" href="css/labStyle.css">
+</head>
+<body>
+    <section id="labBox">
+        <div id="labForm">
+            <form action="">
+                <label for="contact"><h1>1. Your Contact Details</h1></label>
+                <input type="text" name="firstName" placeholder="Full Name" class="inputBox">
+                <input type="text" name="patientId" placeholder="Patient Id if Exists" class="inputBox"></br>
+                <input type="number" name="tel" placeholder="Contact Number" class="inputBox">
+                <input type="email" name="email" placeholder="Email Id" class="inputBox">
+                <br>
+                <label for="contact"><h1>2. Address</h1></label>
+                <input type="text" name="hNo" placeholder="H-No." class="inputBox">
+                <input type="text" name="street" placeholder="Street" class="inputBox"></br>
+                <input type="text" name="Area" placeholder="Area" class="inputBox">
+                <input type="text" name="email" placeholder="Landmark" class="inputBox">
+                <br>
+                <h3 style="margin-left: 40px;">District</h3>
+                <select name="district" id="district" class="inputBox">
+                    <option>Choose</option>
+                    <option value="East">East</option>
+                    <option value="West">West</option>
+                    <option value="North">North</option>
+                    <option value="South">South</option>
+                    <option value="North East">North-East</option>
+                    <option value="North West">North-West</option>
+                    <option value="South East">South-East</option>
+                    <option value="South West">South-West</option>
+                </select>
+                <br>
+                <label for="testType"><h1>3. Choose Test Type</h1></label>
+                <input type="checkbox" id="cbc" name="cbc" value="CBC">
+                <label for="cbc" class="inputBox"> CBC </label><br>
+                <input type="checkbox" id="urin" name="urin" value="urin">
+                <label for="cbc" class="inputBox"> Complete Urin </label><br>
+                <input type="checkbox" id="lipidProfile" name="lipidProfile" value="Lipid Profile">
+                <label for="cbc" class="inputBox"> Lipid Profile</label><br>
+                <input type="checkbox" id="tsh" name="tsh" value="tsh">
+                <label for="cbc" class="inputBox"> Thyroid Stimulating Hormone(TSH) </label><br>
+                <br>
+                <label for="hardCopy"><h1>4. Do you want a hard copy of the report also?</h1></label>
+                <input type="radio" name="hardCopy" value="Yes">
+                <label for="cbc" class="inputBox"> Yes </label><br>
+                <input type="radio" name="hardCopy" value="No">
+                <label for="cbc" class="inputBox"> No</label><br>
+                <br>
+                <label for="testType"><h1>5. Select Your Comfortable Date and Time</h1></label>
+                <input type="date" name="email" placeholder="Date" class="inputBox">
+                <input type="time" name="email" placeholder="Time" class="inputBox">
+                <br>
+                <input type="submit" value="Submit" class="button">
+                <input type="reset" value="Reset" class="button">
+            </form>
+            
+        </div>
+        <div id="labImage">
+            <img src="images/Lab-Test/lab-test.jpg" alt="lab-test">
+        </div>
+    </section>
+</body>
+</html>
